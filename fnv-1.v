@@ -1,13 +1,10 @@
 module fnv1
 
 const (
-	fnv_offset_basis_32 = 216613626
- 	fnv_offset_basis_64 = 14695981039346656037
-)
-
-const (
-	fnv_prime_32 = 16777619 
-	fnv_prime_64 = 1099511628211
+	fnv_offset_basis_32 = u32(216613626)
+ 	fnv_offset_basis_64 = u64(14695981039346656037)
+	fnv_prime_32 = u32(16777619) 
+	fnv_prime_64 = u64(1099511628211)
 )
 
 fn fnv1_hash_32(data &[]byte) u32 {
